@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M. Selvapriya | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Nav bar-->
+    <nav>
+      <h3>SelvaDev</h3>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="toggle" onclick="toggleTheme()">🌸</div>
+    </nav>
+    <!--It's My Intro-->
+    <section class="hero card reveal">
+      <img src="professional.png" alt="Profile Photo">
+      <h1>M. Selvapriya</h1>
+      <p class="tagline">
+         Full Stack Developer focused on building clean, scalable web applications.
+      </p>
+      <div class="typing" id="typing"></div>
+      <div class="info">
+        <i>📧 selvapriyam0987@gmail.com</i> <br />
+        🔗 LinkedIn | GitHub <br />
+        📍 Tamil Nadu, India<br />
+      </div>
+    </section>
+    <section id="about" class="card reveal">
+      <h2>About Me</h2>
+      <ul>
+        <li>
+          Passionate about building structured, user-friendly web applications.
+        </li>
+        <li>
+          I have developed projects such as Clinic Management System, Career
+          Guidance Platform, and Blog Website implementing authentication and
+          database integration.
+        </li>
+        <li>
+          I work with HTML, CSS, JavaScript for frontend and Python (Flask) with
+          SQL for backend.
+        </li>
+        <li>I love building UI designs inspired by modern Korean layouts.</li>
+        <li>
+         I’m looking forward to improving my skills and gaining real-world development experience.
+        </li>
+      </ul>
+    </section>
+    <!--Education Section-->
+    <section id="education" class="card reveal">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Bachelor of Computer Applications</h3>
+            <span>2023 – 2026</span>
+            <p>
+              Currently pursuing final year with focus on Web Development and UI
+              Design.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Higher Secondary Education</h3>
+            <span>2021 – 2023</span>
+            <p>Completed with strong foundation in Computer Applications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--My Skills-->
+    <section id="skills" class="skills-section reveal">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>HTML</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>CSS</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚛️</div>
+          <h3>React</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🗄️</div>
+          <h3>SQL</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🐍</div>
+          <h3>Python</h3>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔗</div>
+          <h3>API</h3>
+        </div>
+      </div>
+    </section>
+    <!--My Experience-->
+    <section id="experience" class="card reveal">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+           <h3>Full Stack Web Developer Intern</h3>
+           <p><strong>Unified Mentor Pvt Ltd</strong></p>
+           <p>Dec 2025 – Mar 2026</p>
+            <p>
+              Worked on responsive UI design and interactive features using
+              HTML, CSS, and JavaScript.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Full Stack Web Development Course</h3>
+            <span>2025 – Udemy Certification</span>
+            <p>
+              Completed hands-on training in frontend and backend fundamentals
+              including React basics and API integration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+<section id="projects" class="projects-section reveal">
+  <h2 class="section-title">My Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card"
+         data-title="Personal Portfolio"
+         data-description="Modern personal portfolio website showcasing skills and projects."
+         onclick="openModal(this)">
+      <h3>Personal Portfolio</h3>
+      <p>Modern personal portfolio website</p>
+    </div>
+
+    <div class="project-card"
+         data-title="Technical Blog Website"
+         data-description="Real-time learning experience platform built with Flask and SQLite."
+         onclick="openModal(this)">
+      <h3>Technical Blog Website</h3>
+      <p>Real-time learning experience platform</p>
+    </div>
+
+    <div class="project-card"
+         data-title="Expense Tracker"
+         data-description="Tracks daily income and expenses in real time with data visualization."
+         onclick="openModal(this)">
+      <h3>Expense Tracker</h3>
+      <p>Tracks daily income and expenses in real time</p>
+    </div>
+  </div>
+</section>
+
+    <!--Contact me-->
+    <section id="contact" class="card reveal">
+      <h2>Contact Me</h2>
+      <form
+        action="https://formsubmit.co/selvapriyam0987@gmail.com"
+        method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message 🫡</button>
+      </form>
+    </section>
+    <!--All about-->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Side -->
+        <div class="footer-left">
+          <h2>M. Selvapriya</h2>
+          <p>Full Stack Web Developer | UI Enthusiast</p>
+        </div>
+        <!--Social Icons-->
+        <div class="footer-social">
+          <a href="https://github.com/selvapriyam0987-design" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/selvapriya-m" target="_blank">LinkedIn</a>
+          <a href="mailto:selvapriyam0987@gmail.com">Email</a>
+        </div>
+        <!--Right Side-->
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </div>
+         <!-- close footer-container -->
+      <div class="footer-bottom">
+        © 2026 Selvapriya.M | Designed with Passion 💗
+      </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
